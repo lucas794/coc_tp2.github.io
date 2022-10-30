@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Compra de tickets</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo_compra_ticket.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    
+<body>
+    <header>
+        <div class="header">
+            <h3 class="confbsas">
+                Conf Bs As
+            </h3>
+            <ul class="links_de_headers">
+                <li>
+                    <a href="index.html" style="text-decoration: none; color: darkgray;">La conferencia</a>
+                </li>
+                <li>
+                    <a class="oradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
+                </li>
+                <li>
+                    <a class="lugaryfecha" style="text-decoration: none;">El lugar y la fecha</a>
+                </li>
+                <li>
+                    <a class="orador" href="#convierteteenorador" style="text-decoration: none; color: white;">Conviértete en
+                        orador</a>
+                </li>
+                <li>
+                    <a class="tickets" href="compra_tickets.html" style="text-decoration: none;">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="tipos_de_descuentos">        
+            <div class="estudiante">  
+                <h3>Estudiante</h3>
+                <p>Tienen un descuento</p>
+                <p class="porcentaje">80%</p>
+                <p style="color: darkgray;">*presentar documentación</p>
+            </div>
+
+            <div class="trainee">
+                <h3>Trainee</h3>
+                <p>Tienen un descuento</p>
+                <p class="porcentaje">50%</p>
+                <p style="color: darkgray;">*presentar documentación</p>
+
+            </div>
+            <div class="junior">
+                <h3>Junior</h3>
+                <p>Tienen un descuento</p>
+                <p class="porcentaje">15%</p>
+                <p style="color: darkgray;">*presentar documentación</p>
+            </div>
+        </section>
+        
+        <section class="seccion_formulario">
+            <h6>VENTA</H6>   
+            <h2>VALOR DE TICKET <span id="precioDelTicket"></span></h2>
+        
+            <form class="formulario" >
+                <div class="datos_nombre_apellido">            
+                    <input type="text" id="nombre" class="nombre_apellido" info="Nombre" required placeholder=" Nombre">
+                    
+                    <input type="text" id="apellido" class="nombre_apellido" info="Apellido" required placeholder=" Apellido">              
+                </div>
+                <div class="dato_de_email_cantidad">
+                    <input type="email" id="correo" class="mail" info="e-mail" required placeholder=" Correo">
+                </div>
+
+                <div class="dato_de_email_cantidad">
+                    <div class="cantidad"> 
+                        <label for="cantidad" class="texto-padron">Cantidad</label>
+                        <input type="number" min="1" class="cantidad_compra" id="cantidad" info='cantidad de tickets' placeholder=" Cantidad" required>
+                
+                    </div>
+                                
+                    <div class="categoria">
+                        <label for="inputCategoria" class="texto-padron">Categoría</label>
+                        <select id="inputCategoria" class="categoria-compra" info="categoria">
+                        <option value="" selected>Seleccionar</option>
+                        <option value="0">Estudiante</option>
+                        <option value="1">Trainee</option>
+                        <option value="2">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="total">
+                    <p class="total_a_pagar">Total a Pagar: $ <span id="totalPago" class="alingn-middle"></span></p>
+                </div>
+                <div class="botones_borrar_calcular">
+                    <div>   
+                        <button type="button" onclick='limpiarCompra()' class="borrar">Borrar</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick='calcularPrecio()' class="generar_resumen">Resumen</button>
+                    </div>
+                </div>
+        </form>
+        </section>
+    </main>
+
+    <script src="js/calculoDeTickets.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</body>
+
+<footer>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Contáctanos</a>
+    <a href="">Prensa</a>
+    <a href="">Conferencias</a>
+    <a href="">Términos y condiciones</a>
+    <a href="">Privacidad</a>
+    <a href="">Estudiantes</a>
+</footer>
+
+</html>
+

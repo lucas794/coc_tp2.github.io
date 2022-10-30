@@ -1,0 +1,336 @@
+header{
+    background-color: rgba(52,57,63,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    padding-left: 100px;
+    width: 100%;
+
+}
+
+.logo{
+    height: 60px;
+}
+.texto__logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;  
+    color: white;
+}
+.col2{
+    margin-left: 10%;
+    width: 75%;   
+    font-size: 17px;  
+} 
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.blanco{
+    color: white;
+    }
+.verde{
+    color: rgb(40, 144, 65);
+}
+.gris{
+    color: rgb(156, 156, 158);
+}
+
+main{
+    width: 100%;
+    margin:0 auto;
+}
+.tipos_de_descuentos{   
+    display: flex;
+    padding: 5px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.tipos_de_descuentos  div {
+    text-align: center;
+    width: 230px;
+    vertical-align: center;
+    margin: 15px 3.5px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+.tipos_de_descuentos .estudiante {
+    border: 2px solid rgb(0,123,255); 
+    padding-top: 20px;
+}
+.tipos_de_descuentos .trainee {
+    border: 2px solid rgb(23,162,184);
+    padding-top: 20px;
+}
+.tipos_de_descuentos .junior {
+    border: 2px solid rgb(255,193,7);
+    padding-top: 20px;
+}
+.porcentaje{
+    font-size:18px;
+    font-weight:bold;    
+}
+.estudiante:hover{
+   border: 3px solid rgb(0, 123, 255);  
+}
+.trainee:hover {
+    border: 3px solid rgb(23, 162, 184);  
+}
+.junior:hover{
+    border: 3px solid rgb(255, 193, 7); 
+}
+
+.seccion_formulario {
+    width: 100%;
+}
+.seccion_formulario h2, h6{
+    text-align: center;
+}
+
+
+.datos_nombre_apellido{
+    justify-content: center;
+    text-align: center;
+}
+.nombre_apellido, .cantidad_compra, .categoria-compra {
+    width: 350px;
+    border-radius: 5px;
+    border:1px solid rgb(179, 173, 173);
+    padding: 5px 0;
+    margin: 10px 0;
+    /*font-size: 20px;*/
+}
+
+.dato_de_email_cantidad{
+    width: 940px;
+    display: flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content: center;
+    
+}
+
+.mail{
+    width: 703px;
+    border-radius: 5px;
+    border:1px solid rgb(179, 173, 173);
+    padding: 5px 0;
+    margin: 10px 0;
+    
+}
+
+.cantidad, .categoria{
+    text-justify: left;
+    width:350px;
+    margin:10px 2px;
+}
+
+.total{
+    width: 703px;
+    display: flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #cce5ff;
+}
+
+.total_a_pagar{
+    text-justify: left;
+    width:100%;
+    margin:0px 2px;
+    color:rgb(28, 61, 151);   
+}
+
+.botones_borrar_calcular{
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+}
+
+.borrar, .generar_resumen{
+    width: 350px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 5px 0;
+    margin: 20px 2px;
+    color:white;
+    background-color: rgb(151,201,62);
+}
+.entrada-invalida::placeholder{
+    color:rgba(185, 37, 37, 0.753);
+}
+.entrada-invalida {
+    border-color: rgba(185, 37, 37, 0.753);;
+}
+
+footer {
+    background: linear-gradient(80deg,#1d3a4a 0%, #1d5271 80%);
+    height:14vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    font-size: 14pt; 
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+  /* pantalla maximo 980px */ 
+  @media screen and (max-width:980px) {
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+    }
+
+.card_descuentos{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    margin: 0 auto;
+
+}
+
+footer{
+        height: 15%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+       font-size: 12pt;            
+    } 
+   
+}
+
+  /* pantalla maximo 700px */
+
+@media screen and (max-width:700px) {
+
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+        font-size: 11pt;
+    }    
+    .texto__logo {
+       font-size: 12pt;
+    }  
+    main{
+        width: 100%;      
+    }    
+    .card_descuentos{   
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .padron, .cantidad_compra, .categoria-compra {
+        width: 300px;  
+    }
+
+    .dato_de_email_cantidad{
+        width: 625px;
+    }
+    .mail{
+        width: 610px;
+
+    }
+    .total{
+        width: 600px; 
+    }
+    .borrar, .resumen{
+        width: 298px;
+    }
+    }
+
+  /* pantalla maximo 480px */
+  @media screen and (max-width:480px) {
+
+ 
+    .col1{
+        width: 55%;}
+    .col2{
+        width: 45%;
+        font-size: 10pt;
+
+    }                           
+    .texto__logo {
+       font-size: 9pt;    
+    }  
+    .logo{
+        height: 30px;
+        margin-left: 0%;
+    }
+    main{
+        width: 100%;        
+    }
+    .card_descuentos{   
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        } 
+    
+    .datos_nombre_apellido{
+        width: 100%;
+        justify-content: center;     
+        margin: 0 auto;
+    }
+    .padron, .cantidad_compra, .categoria-compra {
+        width: 300px;       
+    }
+    
+    .dato_de_email_cantidad{
+        width: 100%;  
+        display: flex;
+        flex-direction: column;     
+    }
+   
+    .mail{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .cantidad, .categoria{      
+        width:300px;
+        margin: 0 auto;
+    }
+    
+    .total{
+        width: 300px;       
+    }
+        
+    .botones_borrar_calcular{
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+    
+    .borrar, .resumen{
+        width: 300px;
+        margin: 5px auto;
+    }
+
+
+
+    footer{
+        height: 10%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+        font-size: 10pt;  
+    } 
+}

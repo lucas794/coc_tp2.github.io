@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>TP CoC integrador #1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="opciones">
+                    <ul class="linksheader1">
+                        <br>
+                        <li>
+                            <a class="conferencia" href="#confciudad" style="text-decoration: none;">La conferencia</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="oradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="lugaryfecha" style="text-decoration: none;">El lugar y la fecha</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="orador" href="#convierteteenorador" style="text-decoration: none;">Conviertete en orador</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="tickets" href="compra_tickets.html" style="text-decoration: none;">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="https://www.buenosaires.gob.ar/educacion/codo-codo">
+                    <img src="./imagenes/codoacodo.png" class="codoacodo" alt="codoacodo">
+                </a>
+            </div>
+            <h3 class="confbsas">
+                Conf Bs As
+            </h3>
+            <ul class="links_de_headers">
+                <li>
+                    <a class="conferencia" href="#confciudad" style="text-decoration: none;">La conferencia</a>
+                </li>
+                <li>
+                    <a class="oradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
+                </li>
+                <li>
+                    <a class="lugaryfecha" style="text-decoration: none;">El lugar y la fecha</a>
+                </li>
+                <li>
+                    <a class="orador" href="#convierteteenorador" style="text-decoration: none;">Conviértete en
+                        orador</a>
+                </li>
+                <li>
+                    <a class="tickets" href="compra_tickets.html" style="text-decoration: none;">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <img id="buenos_aires_1" src="./imagenes/ba1.jpg" alt="ciudad">
+        <div class="conf">
+            <h1>
+                <a id="confciudad">Conf Bs As</a>
+            </h1>
+        </div>
+        <div class="texto">
+            <h4>
+                Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
+                evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                esperamos!
+            </h4>
+        </div>
+        <br>
+        <div class="buttons">
+            <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="location.href='compra_tickets.html'""><a id="comprar_tickets">Comprar tickets</a></button>
+        </div>
+        <h6 style="text-align: center; font-weight: lighter;">CONOCE A LOS</h6>
+        <h1 style="text-align: center;"><a id="conocer_oradores">ORADORES</a></h1>
+        <br>
+        <div class="tarjeta_con_oradores">
+            <div class="h-75 d-inline-block card_steve">
+                <img src="./imagenes/steve.jpg" class="card-img-top" alt="steve">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning javascript_logo">JavaScript</button>
+                    <button type="button" class="btn btn-info react_logo">React</button>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text parrafos_cartas">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!
+                    </p>
+                </div>
+            </div>
+            <div class="card_bill">
+                <img src="./imagenes/bill.jpg" class="card-img-top" alt="bill">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning javascript_logo">JavaScript</button>
+                    <button type="button" class="btn btn-info react_logo">React</button>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text parrafos_cartas">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!
+                    </p>
+                </div>
+            </div>
+            <div class="card_ada">
+                <img src="./imagenes/ada.jpeg" class="card-img-top" alt="ada">
+                <div class="card-body">
+                    <button type="button" class="btn btn-secondary negocios_logo">Negocios</button>
+                    <button type="button" class="btn btn-danger startups_logo">Startups</button>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text parrafos_cartas">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste!
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam
+                        magni ratione!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" style="margin: 0%; padding: 0%">
+            <div class="col-6 themed-grid-col">
+                <img src="./imagenes/honolulu.jpg" class="hawaii" alt="hawaii" style="width: 100%">
+            </div>
+            <div class="col-6 themed-grid-col text">
+                <h1 class="bsas_octubre_titulo">Bs As - Octubre</h1>
+                <p class="bsas_parrafo">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+                    Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque
+                    el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y
+                    el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad
+                    (aproximadamente 600km² de superficie).</p>
+                <br>
+                <button type="button" class="btn btn-outline-light"
+                    style="margin-left: 20px; margin-top: 5px; margin-bottom: 10px;">Conoce más</button>
+            </div>
+        </div>
+        <br>
+        <h6 style="text-align: center; font-weight: lighter;">CONVIÉRTETE EN UN</h6>
+        <h1 style="text-align: center;"><a id="convertirse_en_orador">ORADOR</a></h1>
+        <h5 style="text-align: center; font-weight: 400; margin-bottom: 20px;">Anótate como orador para dar una <a
+                href="" style="text-decoration: none; color: black; border-bottom:2px dotted black;">charla ignite</a>.
+            Cuéntanos de qué quieres hablar!</h5>
+        <div class="row">
+            <div class="col input_nombre">
+                <input type="text" class="form-control" placeholder="Nombre" style="font-size: 20px;"
+                    aria-label="First name">
+            </div>
+            <div class="col input_apellido">
+                <input type="text" class="form-control" placeholder="Apellido" style="font-size: 20px;"
+                    aria-label="Last name">
+            </div>
+        </div>
+        <br>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 200px"></textarea>
+            <label for="floatingTextarea2" style="font-size: 25px; color: rgba(154,151,158,255)">Sobre qué quieres
+                hablar?</label>
+        </div>
+        <h6 class="titulo">Recuerda incluir un título para tu charla</h6>
+        <br>
+        <button type="button" class="btn btn-success enviar">Enviar</button>
+    </main>
+</body>
+<footer>
+    <ul class="footer">
+        <li class="preguntas"><a href="#preguntas" style="text-decoration: none; color: white">Preguntas frecuentes</a>
+        </li>
+        <li class="contacto"><a href="#contact" style="text-decoration: none; color: white">Contáctanos</a>
+        </li>
+        <li class="prensa"><a href="#prensa" style="text-decoration: none; color: white">Prensa</a>
+        </li>
+        <li class="conferencias"><a href="#conferencias" style="text-decoration: none; color: white">Conferencias</a>
+        </li>
+        <li class="tyc"><a href="#tyc" style="text-decoration: none; color: white"> Términos y condiciones</a>
+        </li>
+        <li class="privacidad"><a href="#privacidad" style="text-decoration: none; color: white"> Privacidad</a>
+        </li>
+        <li class="estudiantes"><a href="#estudiantes" style="text-decoration: none; color: white">Estudiantes</a>
+        </li>
+    </ul>
+</footer>
+
+</html>
