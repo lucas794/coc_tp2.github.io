@@ -50,6 +50,7 @@ function limpiarCompra() {
     inputsDeTicket.forEach( input => {
         input.setAttribute('value', '');
         input.value = '';
+        input.classList.remove("entrada-invalida"); // si tenia un estado inválido, se lo sacamos
     });
     asignarPrecio("", "");
 }
